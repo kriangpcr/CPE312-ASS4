@@ -1,4 +1,3 @@
-Here’s an updated version of your README with the addition of the course information:
 
 ---
 
