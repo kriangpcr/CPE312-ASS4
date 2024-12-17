@@ -1,39 +1,38 @@
+# Binary Classification Streamlit App 🍄
 
----
+This Streamlit app is designed to classify mushrooms as either edible or poisonous using binary classification models. It provides an interactive interface for training, evaluating, and comparing different machine learning models.
+**Note**: This project is part of the **CPE312 Intro to Data Science** course for Computer Engineering at SWU.
 
-# Binary Classification Streamlit App for Mushroom Edibility
+## Features
+- **Model Selection**: Choose between SVM, Logistic Regression, and Random Forest.
+- **Hyperparameter Tuning**: Adjust model hyperparameters for customized training.
+- **Performance Metrics**: View metrics including Accuracy, Precision, Recall, Confusion Matrix, ROC Curve, and Precision-Recall Curve.
+- **Data Display**: Option to view raw mushroom dataset.
 
-📖 **Introduction**  
-This project is a Streamlit-based application designed to classify mushrooms as edible or poisonous using Machine Learning. The app leverages a trained model to provide accurate predictions based on mushroom features. This project is part of the **CPE312**.
+## Getting Started
 
-📊 **Objectives**  
-- Develop a user-friendly application for mushroom classification.
-- Train and evaluate multiple machine learning models, such as Support Vector Machine (SVM), Logistic Regression, and Random Forest.
-- Visualize classification results using metrics and graphs.
-
-🗂️ **Dataset**  
-UCI Mushroom Dataset: This dataset contains features such as color, shape, and odor, which are used to classify mushrooms into two categories: edible and poisonous.
-
-⚙️ **Installation**  
-To run the application, install the required libraries:
+### Prerequisites
+Ensure you have the required libraries:
 
 ```bash
-pip install streamlit pandas numpy scikit-learn matplotlib
+pip install -r requirements.txt
 ```
 
-🚀 **How to Run**  
-1. Clone the repository.
-2. Navigate to the project directory.
-3. Run the app using Streamlit:
+### Running the App
 
 ```bash
 streamlit run app.py
 ```
 
-📈 **Features**  
-- Upload your own dataset or use the default UCI Mushroom Dataset.
-- Select and compare machine learning models.
-- View performance metrics such as accuracy, precision, recall, and F1-score.
-- Interactive visualizations of the classification results.
+### Project Structure
 
---- 
+- app.py: Main Streamlit app file.
+- data/: Directory containing the mushrooms.csv dataset.
+- requirements.txt: Lists required dependencies.
+
+### Usage
+Use the sidebar to select a classifier, adjust parameters, and view model performance metrics. The app dynamically displays evaluation metrics to help analyze each model's effectiveness.
+
+### Citations
+1. Mushroom [Dataset]. (1981). UCI Machine Learning Repository. https://doi.org/10.24432/C5959T.
+2. Build a Machine Learning Web App with Streamlit and Python. Coursera Project Network.
